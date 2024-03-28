@@ -2,8 +2,6 @@ package me.dio.santanderdevweek2023.service;
 
 import me.dio.santanderdevweek2023.domain.model.User;
 
-public interface UserService {
-    User findById(Long id);
+public interface UserService extends CrudService<Long, User> {
 
-    User create(User userToCreate);
 }
